@@ -28,7 +28,7 @@ PLATFORMS
 
 DEPENDENCIES
   rackup (~> 2.1)
-  sinatra (~> 4.0.0)
+  sinatra (~> 4.0)
 
 BUNDLED WITH
    2.3.5
