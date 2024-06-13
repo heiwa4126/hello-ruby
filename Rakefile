@@ -7,7 +7,7 @@ end
 
 # `npm install`
 task :init do
-  sh "bundle config set --local path 'vendor/bundle'"
+  sh 'bundle config set --local path vendor/bundle'
   sh 'bundle install'
 end
 

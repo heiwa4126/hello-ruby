@@ -1,6 +1,6 @@
 # hello-ruby
 
-Ruby なんもわからん
+Ruby なんもわからん (2024-06)
 
 ## 実行
 
@@ -23,3 +23,8 @@ gem install rubocop --user
 # for ruby
 export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 ```
+
+## TODO
+
+- test
+- 静的解析
