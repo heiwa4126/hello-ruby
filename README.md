@@ -5,16 +5,17 @@ Ruby なんもわからん (2024-06)
 ## 実行
 
 ```sh
-rake init
-rake hello  ## 'Hello, Rake!'
-rake        ## sinatra. ブラウザで http://127.0.0.1:4567 で "Hello, world!"
+rake init:dev   # 開発環境含む
+rake hello      # 'Hello, Rake!'
+rake            # Sinatra App. ブラウザで http://127.0.0.1:4567 で "Hello, world!"
+rake spec       # `rake test`でもOK.
 ```
 
-## 実行前
+## 実行前準備
 
 ```sh
 sudo apt install ruby-rake -y
-gem install rubocop --user
+gem install rubocop solargraph --user
 ```
 
 .bashrc などでパス追加
@@ -26,5 +27,5 @@ export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
 ## TODO
 
-- test
+- ~~test~~
 - 静的解析
