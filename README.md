@@ -1,8 +1,9 @@
 # hello-ruby
 
-Ruby なんもわからん (2024-06)
+(2024-06)
+Ruby なんもわからんので、npm 的に。
 
-## 実行
+## 実行(開発環境)
 
 ```sh
 rake init:dev   # 開発環境含む
@@ -11,7 +12,7 @@ rake            # Sinatra App. ブラウザで http://127.0.0.1:4567 で "Hello,
 rake spec       # `rake test`でもOK.
 ```
 
-## 実行前準備
+## 実行前準備(開発環境)
 
 ```sh
 sudo apt install ruby-rake -y
@@ -29,3 +30,9 @@ export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 
 - ~~test~~
 - 静的解析
+- パッケージング
+  ```sh
+  gem install hello-ruby
+  hello-ruby
+  ```
+  みたいのができるといいな。
