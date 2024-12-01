@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rackup', '~> 2.1'
+gem 'rackup', '~> 2.2'
 gem 'sinatra', '~> 4.1'
 
 group :development do
