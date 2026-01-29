@@ -1,15 +1,17 @@
+ENV['APP_ENV'] = 'test'
+
+require_relative '../src/app'
 require 'rspec'
 require 'rack/test'
-require_relative '../src/app'
 
-describe 'My Sinatra Application' do
+RSpec.describe 'HelloWorld' do
   include Rack::Test::Methods
 
   def app
-    MyApp
+    Sinatra::Application
   end
 
-  it 'should return "Hello, world!" when accessing the root URL' do
+  it 'says hello world' do
     get '/'
     expect(last_response).to be_ok
     expect(last_response.body).to eq('Hello, world!')
