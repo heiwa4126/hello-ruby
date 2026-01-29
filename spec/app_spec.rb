@@ -6,7 +6,7 @@ describe 'My Sinatra Application' do
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application
+    MyApp
   end
 
   it 'should return "Hello, world!" when accessing the root URL' do
